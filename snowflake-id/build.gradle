@@ -1,0 +1,9 @@
+jar {
+	baseName PROJECT_NAME
+	version PROJECT_VERSION
+}
+version PROJECT_VERSION
+
+dependencies {
+
+}
