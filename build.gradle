@@ -11,7 +11,7 @@ plugins {
 
 //所有项目的配置，包括tools项目
 allprojects {
-	group = 'xu.projects'
+	group = 'xu.modules'
 	repositories {
 		mavenLocal()
 		maven {

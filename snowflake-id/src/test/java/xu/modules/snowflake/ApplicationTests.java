@@ -1,4 +1,4 @@
-package xu.projects.mysqlId;
+package xu.modules.snowflake;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

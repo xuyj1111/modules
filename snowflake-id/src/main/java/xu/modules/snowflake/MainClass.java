@@ -1,4 +1,4 @@
-package xu.projects.mysqlId;
+package xu.modules.snowflake;
 
 public class MainClass {
 
