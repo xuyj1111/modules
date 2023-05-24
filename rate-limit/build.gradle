@@ -5,5 +5,6 @@ jar {
 version PROJECT_VERSION
 
 dependencies {
-
+	compile 'org.springframework.data:spring-data-redis'
+	compile 'org.redisson:redisson-spring-boot-starter:3.10.7'
 }

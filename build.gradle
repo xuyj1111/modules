@@ -29,7 +29,8 @@ subprojects {
 	apply plugin: 'io.franzbecker.gradle-lombok'
 
 	// 指定上传的路径
-	def localMavenRepo = 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath
+//	def localMavenRepo = 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath
+	def localMavenRepo = "${LOCAL_MAVEN}"
 	// 上传Task
 	uploadArchives {
 		repositories {
@@ -40,10 +41,14 @@ subprojects {
 	}
 
 	dependencies {
+		compile 'org.springframework.boot:spring-boot-starter'
 		compile 'org.springframework.boot:spring-boot-starter-web'
 		testCompile "org.springframework.boot:spring-boot-starter-test"
 		compile 'org.projectlombok:lombok'
 		compile 'org.junit.jupiter:junit-jupiter:5.4.2'
+		compile 'cn.hutool:hutool-all:5.8.1'
+		compile 'joda-time:joda-time:2.10.1'
+		compile 'com.fasterxml.jackson.core:jackson-databind:2.9.8'
 	}
 
 	clean {
